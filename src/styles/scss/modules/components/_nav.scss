@@ -1,0 +1,11 @@
+.nav {
+    --padding-nav: 1.5rem;
+    padding-top: var(--padding-nav);
+    padding-bottom: var(--padding-nav);
+  
+    &__logo {
+      display: block;
+      width: 32px;
+      height:45px;
+    }
+  }

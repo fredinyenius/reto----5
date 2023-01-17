@@ -1,0 +1,28 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(var(--light-primary-shadow-color), var(--light-secondary-shadow-color));
+    opacity: 0;
+    pointer-events: none;
+    --translate-modal: 100%;
+    transition: opacity 0.25s;
+  
+    &--header {
+      @include desktop {
+        position: static;
+        background-image: none;
+        opacity: 1;
+        pointer-events: auto;
+        --translate-modal: 0;
+      }
+    }
+  
+    &--show {
+      opacity: 1;
+      pointer-events: auto;
+      --translate-modal: 0;
+    }
+  }

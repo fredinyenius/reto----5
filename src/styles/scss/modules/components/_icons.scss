@@ -1,0 +1,28 @@
+.icon {
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-text-color);
+    font-size: 2rem;
+    padding: 0;
+    filter: contrast(0.75);
+    cursor: pointer;
+    transition: filter 0.25s;
+  
+    &:hover {
+      filter: contrast(1);
+    }
+  
+    &--close {
+      position: absolute;
+      top: var(--padding-nav);
+      right: var(--container-padding);
+    }
+  
+    &--close,
+    &--menu {
+      @include desktop {
+        display: none;
+      }
+    }
+  }

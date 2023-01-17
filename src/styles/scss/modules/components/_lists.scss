@@ -1,0 +1,49 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+    &--header {
+      @include f-elements(column, center, center, calc(var(--section-padding) * 0.75));
+      background-image: linear-gradient(to bottom, var(--light-primary-shadow-color), var(--light-secondary-shadow-color));
+      width: 50%;
+      height: 100%;
+      margin-left: auto;
+      transform: translate(var(--translate-modal));
+      transition: 0.25s;
+  
+      @include desktop {
+        flex-direction: row;
+        background-color: none;
+        width: auto;
+      }
+    }
+  
+    &__link {
+      position: relative;
+      color: var(--primary-text-color);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.25s;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -0.125rem;
+        width: 0;
+        height: 0.0625rem;
+        background-color: var(--secondary-highlight-color);
+        transition: width 0.25s;
+      }
+  
+      &:hover,
+      &--active {
+        color: var(--primary-highlight-color);
+  
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }

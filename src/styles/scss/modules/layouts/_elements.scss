@@ -1,0 +1,15 @@
+.f-elements {
+    display: flex;
+  
+    &--header {
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &--center {
+      align-items: center;
+      align-content: center;
+      justify-items: center;
+      justify-content: center;
+    }
+  }
