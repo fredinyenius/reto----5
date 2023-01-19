@@ -1,0 +1,14 @@
+.select  {
+    background-color: var(--primary-theme-color);
+    
+
+    &--theme {
+       font-size: 32px; 
+       appearance: none;
+       text-align: center;
+       width: 24px;
+       height: 24px;
+       border-radius: 4px;
+
+    }
+    }

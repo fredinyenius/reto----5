@@ -80,12 +80,12 @@ const Header = () => {
             </ul>
           </div>
           <div className='f-elements f-elements--center'>
-            {/* <select>
-              <option value="value1">🌚</option>
-              <option value="value2">🌞</option>
-              <option value="value3">💻</option>
-            </select> */}
-          <button className='icon'
+            { <select className='select select--theme'>
+              <option value="system">🌚</option>
+              <option value="dark">🌞</option>
+              <option value="light">💻</option>
+            </select> }
+          <button className='icon icon--menu'
                   onClick={showMenu}
                   >
           <BsList/>
