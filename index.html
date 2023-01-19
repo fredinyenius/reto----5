@@ -164,6 +164,13 @@
         loader.remove();
       }, 1000);
     });
+
+    const root = document.documentElement;
+    const theme =localStorage.getItem('theme');
+    if (theme === 'dark' || theme === 'light'){
+      document.documentElement.className = true;
+    };
+
   </script>
 
     
